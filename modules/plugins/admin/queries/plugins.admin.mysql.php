@@ -98,7 +98,11 @@ function admin_plugins_addQueries() {
 			UPDATE !prefix!plugins
 			SET enabled = 1
 			WHERE name = :name
-		'
+		',
+		'disableAllPluginsForModule' => '
+			DELETE FROM !prefix!plugins_modules
+			WHERE module = :module
+		',
 	);
 }
 ?>
