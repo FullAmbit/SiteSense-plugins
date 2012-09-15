@@ -97,6 +97,10 @@ function theme_disabledOfferUninstall($data) {
 		</a>
 	</div>';
 }
+function theme_showUpdateInstructions($data){
+	echo '<h2>',sprintf($data->phrases['plugins']['updateHeader'],$data->output['update']['name']),'</h2>
+	',sprintf($data->phrases['plugins']['updateInstructions'],$data->output['update']['name'],$data->output['update']['newerVersions'][$data->output['update']['newVersion']]['zipLink'],$data->output['update']['name']);
+}
 function theme_uninstalled($data) {
 	echo '<h2>',$data->phrases['plugins']['success'],'</h2><p>',$data->phrases['plugins']['pluginSuccessfullyUninstalled'],'</p>';
 }

@@ -35,7 +35,10 @@ function languages_plugins_admin_en_us(){
 	    'improperInstallFile'              => 'Improper installation file',
 	    'uninstallFunctionNotFound'        => 'The plugin uninstall function could not be found within the plugin installation file.',
 	    'pluginNotFound'                   => 'The plugin you specified could not be found.',
-	    'coreSiteSensePluginError'         => 'This plugin is auto-loaded by SiteSense for core functionality.'
+	    'coreSiteSensePluginError'         => 'This plugin is auto-loaded by SiteSense for core functionality.',
+		'updateHeader'                     => 'Update %s plugin',
+		'updateInstructions'               => 'To update %s, follow these instructions. First, <a href="%s">download the latest .zip for this plugin.</a>. Unzip it and enter the folder with "%s" 
+			in the name. Then log in to the FTP server which your site is on. Go to the root of your SiteSense installation and upload the "plugins" directory from the zip and overwrite the "plugins" directory on the FTP with it. Once you\'ve done that, you\'re done!',
 	);
 }
 ?>
