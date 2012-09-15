@@ -26,7 +26,7 @@ function plugins_settings() {
 	return array(
 		'name'	    => 'plugins',
 		'shortName' => 'plugins',
-		'version'   => '1.0.1',
+		'version'   => '1.0.2',
 	);
 }
 function plugins_install($db,$drop=false,$firstInstall=false,$lang='en_us') {
