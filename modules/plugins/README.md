@@ -6,5 +6,5 @@ SiteSense plugins
  - Website: http://www.fullambit.com/
  - Tags: core, SiteSense, plugins, modules, extensibility, functionality, API, bbcode, editor, tinymce
  - Requires: Pre-Alpha
- - Tested up to: 0.1
+ - Tested up to: 0.3
  - License URI: https://raw.github.com/FullAmbit/SiteSense/master/LICENSE.txt
