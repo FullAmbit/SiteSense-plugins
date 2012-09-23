@@ -74,6 +74,9 @@ function theme_pluginsListInstalledTableRow($plugin,$data,$count) {
 			<tr class="',($count%2 == 0 ? 'even' : 'odd'),'">
 				<td>',$plugin['name'],'</td>
 				<td class="buttonList">';
+	if(isset($data->settings[$plugin['name']])&&is_array($data->settings[$plugin['name']])){
+		echo '<a href="',$data->linkRoot,'admin/settings/group/',$plugin['name'],'">',$data->phrases['core']['settings'],'</a> ';
+	}
 	if($plugin['enabled'])
 		echo '<a href="',$data->linkRoot,'admin/plugins/disable/',$plugin['name'],'">Disable</a>';
 	else
